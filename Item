@@ -1,3 +1,12 @@
 public class Item {
-  
+
+	private String itemName;
+	private double price;
+	
+	// Constructor
+	public Item(String itemName, double price)
+	{
+		// Calling setName method
+		setName(itemName, price);
+	}
 }
