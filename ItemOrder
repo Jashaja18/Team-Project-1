@@ -1,16 +1,16 @@
-/**
+/*
  * Thais Ribeiro, Shreya Karnati
  * January 21, 2021
  * Team Project 1
  * our contribution is this class, Item Order
  * this class lets the user choose what item they want and how many, and also implemetns bulk disount method
  */
+
 public class ItemOrder
 {
     private double orderPrice;
     private String itemName;
     private int quantity;
-
 
     public ItemOrder (Item item, int quantity)
     {
@@ -18,7 +18,7 @@ public class ItemOrder
         this.quantity = quantity;
     }
 
-    public ItemOrder ()
+    public void ItemOrder()
     {
         this.quantity = 0;
     }
@@ -43,7 +43,8 @@ public class ItemOrder
                 orderPrice += Item.getcost() * 0.75;
             }
             return orderPrice;
-        } else {
+        } 
+        else {
             for (int i = 0; i < quantity/2; i++)
                 orderPrice += Item.getcost() * 0.75;
 
