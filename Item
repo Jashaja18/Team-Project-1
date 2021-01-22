@@ -1,24 +1,32 @@
-public class Item {
+public class Item
+{
 
-	// Class variables
-	private String itemName;
-	private double pricePerItem;
-	private int quanity;
-	
-	// Constructor
-	public Item(String itemName, double pricePerItem, int quantity)
-	{
-		// Calling setItem method
-		setItem(itemName, pricePerItem, quantity);
-	}
-	
-	// Method definition
-	public void setItem(String itemName, double pricePerItem, int quantity)
-	{
-		this.itemName = itemName;
-		this.pricePerItem = pricePerItem;
-		this.quanity = quantity;
-	}
-	
-	
+    // Class variables
+    private String itemName;
+    private double pricePerItem;
+    private int quantity;
+    // Constructor
+    public Item(String itemName, double pricePerItem, int quantity)
+    {
+        // Calling setItem method
+        setItem(itemName, pricePerItem, quantity);
+    }
+
+    // Method definition
+    public void setItem(String itemName, double pricePerItem, int quantity)
+    {
+        this.itemName = itemName;
+        this.pricePerItem = pricePerItem;
+        this.quantity = quantity;
+    }
+
+    public String getItemName()
+    {
+        return itemName;
+    }
+
+    public double getPricePerItem()
+    {
+        return pricePerItem;
+    }
 }
