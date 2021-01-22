@@ -1,10 +1,10 @@
-/**
+/*
  * Thais Ribeiro, Shreya Karnati
  * January 21, 2021
  * Team Project 1
- * My contribution is this class, Item Order
- * this class lets the user choose what item they want and how many
+ * [file]
  */
+
 public class ItemOrder
 {
     private double orderPrice;
@@ -13,14 +13,14 @@ public class ItemOrder
     private Item item;
 
 
-    public ItemOrder (Item item, int quantity)
+    public ItemOrder(Item item, int quantity)
     {
         itemName = item.getItemName();
         this.quantity = quantity;
         this.item = item;
     }
 
-    public ItemOrder ()
+    public ItemOrder()
     {
         this.quantity = 0;
     }
