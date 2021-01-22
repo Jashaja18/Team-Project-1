@@ -1,9 +1,9 @@
 /**
- * Thais Ribeiro
+ * Thais Ribeiro, Shreya Karnati
  * January 21, 2021
  * Team Project 1
- * My contribution is this class, Item Order
- * this class lets the user choose what item they want and how many
+ * our contribution is this class, Item Order
+ * this class lets the user choose what item they want and how many, and also implemetns bulk disount method
  */
 public class ItemOrder
 {
