@@ -7,11 +7,11 @@
 
 public class Item
 {
-
     // Class variables
     private String itemName;
     private double pricePerItem;
     private int quantity;
+    
     // Constructor
     public Item(String itemName, double pricePerItem, int quantity)
     {
