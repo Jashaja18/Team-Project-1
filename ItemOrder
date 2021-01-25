@@ -7,12 +7,13 @@
 
 public class ItemOrder
 {
+    // Creating variables needed
     private double orderPrice;
     private String itemName;
     private int quantity;
     private Item item;
 
-
+    // Information needed for an order
     public ItemOrder(Item item, int quantity)
     {
         itemName = item.getItemName();
@@ -20,21 +21,25 @@ public class ItemOrder
         this.item = item;
     }
 
+    // 
     public ItemOrder()
     {
         this.quantity = 0;
     }
 
+    // Used when the name of the item is needed
     public String getItem()
     {
         return itemName;
     }
 
+    // Used when the quantity of items is needed
     public int getQuantity()
     {
         return quantity;
     }
 
+    // Calculates the total price of the order
     public double getOrderPrice()
     {
         double orderPrice = 0;

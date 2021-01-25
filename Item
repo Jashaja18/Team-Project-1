@@ -27,11 +27,13 @@ public class Item
         this.quantity = quantity;
     }
 
+    // Identifying the item
     public String getItemName()
     {
         return itemName;
     }
 
+    // Getting the price of items
     public double getPricePerItem()
     {
         return pricePerItem;
