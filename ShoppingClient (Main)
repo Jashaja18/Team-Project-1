@@ -1,13 +1,33 @@
-/*
- * Group 4
- * January 21, 2021
- * Team Project 1
- * Client for shopping list
- */
+//Taniguchi, Ace & Sal y Rosas, Doris
+//Team Project 1
+//Client to demonstrate use of shopping list classes
 
-public class ShoppingCLient {
-  public static void main(String[] args)  {
-  
-    //what we're going to buy
-  }
+public class ShoppingClient	{
+	public static void main(String[] args)
+    {
+
+        // create list object
+        ShoppingCart myCart = new ShoppingCart();
+
+        // create grocery items
+        // with the name, price per unit, and quantity per unit
+        // to account for bulk purchases
+        Item item1 = new Item("rice", 9.95, 2);
+        Item item2 = new Item("beans", 5.95, 1);
+        
+        // create item orders
+        
+        ItemOrder item1Order = new ItemOrder(item1, 5);
+        ItemOrder item2Order = new ItemOrder(item2, 2);
+
+        // add grocery items to the grocery list object
+        myCart.add(item1Order);
+        myCart.add(item2Order);
+
+        // display list of items
+        //myList.displayItems();
+
+        System.out.println("Total = " + myCart.getTotalPrice());
+    }
+    // end of the main method
 }
