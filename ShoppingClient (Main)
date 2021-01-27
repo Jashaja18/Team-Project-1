@@ -26,8 +26,9 @@ public class ShoppingClient	{
 
         // display list of items
         //myList.displayItems();
+	//Decimal format 2 decimos and rounded
 
-        System.out.println("Total = " + myCart.getTotalPrice());
+        System.out.println("Total = " + String.format("%.2f", myCart.getTotalPrice()));
     }
     // end of the main method
 }
