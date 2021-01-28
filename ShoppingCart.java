@@ -49,7 +49,7 @@ public class ShoppingCart {
 	// Printing out all of the item orders
 	public void printOrders()
     {
-        for (int i = 0; i < cart.lenght(); i++)
+        for (int i = 0; i < cart.length(); i++)
         {
             System.out.println(cart[i].toString() + " " + cart[i].getCost());
         }
