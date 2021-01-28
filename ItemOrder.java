@@ -1,8 +1,8 @@
 
 /*
- * Thais Ribeiro, Shreya Karnati
- * Group # 4
- * January 21, 2021
+ * Thais Ribeiro & Shreya Karnati
+ * Group #4
+ * January 29, 2021
  * Team Project 1
  * [file]
  */
@@ -58,5 +58,11 @@ public class ItemOrder
 
             return orderPrice + item.getPricePerItem();
         }
+    }
+
+    // Used to print out the order in a formatted way
+    public String printOrder()
+    {
+        return getItem() + " Quantity - " + getQuantity() + " Price - " + getOrderPrice;
     }
 }
