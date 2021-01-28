@@ -29,8 +29,8 @@ public class ShoppingClient	{
 
         // Printing out each of the items in a formated way
         //System.out.println("Total = " + String.format("%.2f", myCart.getTotalPrice()));
-        item1.printOrder();
-        item2.printOrder();
+        item1Order.printOrder();
+        item2Order.printOrder();
     }
 
 }
