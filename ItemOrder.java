@@ -63,6 +63,6 @@ public class ItemOrder
     // Used to print out the order in a formatted way
     public String printOrder()
     {
-        return getItem() + " Quantity - " + getQuantity() + " Price - " + getOrderPrice;
+        return getItem() + " Quantity - " + getQuantity() + " Price - " + getOrderPrice();
     }
 }
