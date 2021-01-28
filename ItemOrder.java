@@ -32,13 +32,13 @@ public class ItemOrder
     // Used when the name of the item is needed
     public String getItem()
     {
-        return itemName;
+        return this.itemName;
     }
 
     // Used when the quantity of items is needed
     public int getQuantity()
     {
-        return quantity;
+        return this.quantity;
     }
 
     // Calculates the total price of the order
