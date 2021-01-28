@@ -8,47 +8,37 @@
 
 public class Item
 {
-    // Class variables
-    private String itemName;
-    private double pricePerItem;
-    private int quantity;
-    
-    // Constructor
-    public Item(String itemName, double pricePerItem, int quantity)
-    {
-        // Calling setItem method
-        setItem(itemName, pricePerItem, quantity);
-    }
+	// Class variables
+	private String itemName;
+	private double pricePerItem;
+	private int allQuantity;
 
-    // Method definition
-    public void setItem(String itemName, double pricePerItem, int quantity)
-    {
-        this.itemName = itemName;
-        this.pricePerItem = pricePerItem;
-        this.quantity = quantity;
-    }
-
-    // Identifying the item
-    public String getItemName()
-    {
-        return itemName;
-    }
-
-    // Getting the price of items
-    public double getPricePerItem()
-    {
-        return pricePerItem;
-    }
-    
-    // Standard java toString to print out name and quantity of grocery item 
-	public String toString()
+	// Method definition
+	public void setItem(String itemName, double pricePerItem, int allQuantity)
 	{
-		return quantity + " of " + itemName;
+		this.itemName = itemName;
+		this.pricePerItem = pricePerItem;
+		this.allQuantity = allQuantity;
 	}
 
-	// Getter of item name
-	public String getitemName()
+	// Identifying the item
+	public String getItemName()
 	{
-		return this.itemName;
+		return itemName;
+	}
+
+	public void setQuanity(int allQuantity)
+	{
+		this.allQuantity = allQuantity;
+	}
+
+	public double getPrice() 
+	{
+		return pricePerItem;
+	}
+
+	public String toString()
+	{
+		return itemName + " are " + pricePerItem + " per " + allQuantity;
 	}
 }
