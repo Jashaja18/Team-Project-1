@@ -9,6 +9,8 @@
 import java.util.*;
 
 public class ShoppingCart {
+
+	// Creating the array list used
 	private ArrayList<ItemOrder> cart = new ArrayList<>();
 	
 	public ShoppingCart() {
@@ -43,4 +45,13 @@ public class ShoppingCart {
 	   }
 	    return found;
 	}
+
+	// Printing out all of the item orders
+	public void printOrders()
+    {
+        for (int i = 0; i < cart.lenght(); i++)
+        {
+            System.out.println(cart[i].toString() + " " + cart[i].getCost());
+        }
+    }
 }

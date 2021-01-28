@@ -28,8 +28,8 @@ public class ShoppingClient	{
         myCart.add(item2Order);
 
         // Printing out each of the items in a formated way
-        System.out.println(item1Order.printOrder());
-        System.out.println(item2Order.printOrder());
+        myCart.printOrder();
+        
     }
 
 }
