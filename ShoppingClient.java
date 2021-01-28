@@ -16,10 +16,10 @@ public class ShoppingClient	{
         ShoppingCart myCart = new ShoppingCart();
 
         // Create grocery items with the name, price per unit, and quantity per unit to account for bulk purchases
-        Item item1 = new Item("rice", 9.95, 2);
-        Item item2 = new Item("beans", 5.95, 1);
+        Item item1 = new Item("Rice", 9.95, 2);
+        Item item2 = new Item("Beans", 5.95, 1);
         
-        // Create item orders
+        // Create item order for each of the items
         ItemOrder item1Order = new ItemOrder(item1, 5);
         ItemOrder item2Order = new ItemOrder(item2, 2);
 
@@ -28,7 +28,6 @@ public class ShoppingClient	{
         myCart.add(item2Order);
 
         // Printing out each of the items in a formated way
-        //System.out.println("Total = " + String.format("%.2f", myCart.getTotalPrice()));
         System.out.println(item1Order.printOrder());
         System.out.println(item2Order.printOrder());
     }
