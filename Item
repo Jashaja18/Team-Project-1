@@ -38,4 +38,16 @@ public class Item
     {
         return pricePerItem;
     }
+    
+    // Standard java toString to print out name and quantity of grocery item 
+	public String toString()
+	{
+		return quantity + " of " + itemName;
+	}
+
+	// Getter of item name
+	public String getitemName()
+	{
+		return this.itemName;
+	}
 }
