@@ -13,6 +13,7 @@ public class ItemOrder{
 	private Item item;
 
 	// Information needed for an order
+	// First the item, and then how much we want
 	public ItemOrder(Item item, int allQuantity)
 	{
 		this.allQuantity = allQuantity;
@@ -43,11 +44,15 @@ public class ItemOrder{
 		double orderTotal = 0.00;
 		if (allQuantity >= 10)
 		{
+			// If we purchase more than 10 units of an item
+			// we get 25% off.
 			for (int i = allQuantity; i > 10; i--)
 				orderTotal += item.getPrice();
-			return orderTotal + 7.5 * item.getPrice();
+			return orderTotal + 0.75 * item.getPrice();
 
 		} else {
+			// Otherwise, we pay full price and the item's price
+			// is simply added onto the orderTotal
 			return orderTotal + item.getPrice() * allQuantity;
 		}
 	}
