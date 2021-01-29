@@ -8,37 +8,30 @@
 
 public class Item
 {
-	// Class variables
-	private String itemName;
-	private double pricePerItem;
-	private int allQuantity;
+    // Class variables
+    private String itemName;
+    private double pricePerItem;
+    
+    //constructor
+    public Item(String itemName, double pricePerItem)
+    {
+        this.itemName = itemName;
+        this.pricePerItem = pricePerItem;
+    }
 
-	// Method definition
-	public void setItem(String itemName, double pricePerItem, int allQuantity)
-	{
-		this.itemName = itemName;
-		this.pricePerItem = pricePerItem;
-		this.allQuantity = allQuantity;
-	}
+    // Identifying the item
+    public String getItemName()
+    {
+        return itemName;
+    }
 
-	// Identifying the item
-	public String getItemName()
-	{
-		return itemName;
-	}
+    public double getPrice() 
+    {
+        return pricePerItem;
+    }
 
-	public void setQuanity(int allQuantity)
-	{
-		this.allQuantity = allQuantity;
-	}
-
-	public double getPrice() 
-	{
-		return pricePerItem;
-	}
-
-	public String toString()
-	{
-		return itemName + " are " + pricePerItem + " per " + allQuantity;
-	}
+    public String toString()
+    {
+        return itemName + " are $" + pricePerItem;
+    }
 }
