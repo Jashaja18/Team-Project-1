@@ -67,7 +67,7 @@ public class ShoppingCart{
 				System.out.print(".");
 			}
 			
-			System.out.print("$" + i.getOrderTotal());
+			System.out.print("$" + String.format("%.2f", i.getOrderTotal()));
 			System.out.println();
 
 			/*        	if (i.getQuantity() < 10) {
@@ -81,6 +81,6 @@ public class ShoppingCart{
 			 */
 
 		}
-		System.out.println("Total Price: $" + cart.getTotalPrice());
+		System.out.println("Total Price: $" + String.format("%.2f", cart.getTotalPrice()));
 	}
 }
