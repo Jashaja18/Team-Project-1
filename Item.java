@@ -2,8 +2,8 @@
  * Group # 4
  * Team Project 1
  * January 29, 2021
- * [info]
- */
+ * This class constructs the items we wish to add to our shopping cart and buy.
+ * Each item has a name and a price.
 
 public class Item
 {
@@ -11,7 +11,7 @@ public class Item
     private String itemName;
     private double pricePerItem;
     
-    //constructor
+    //constructor, with name and price of item
     public Item(String itemName, double pricePerItem)
     {
         this.itemName = itemName;
@@ -29,6 +29,7 @@ public class Item
         return pricePerItem;
     }
 
+    // Lets us print the item's name and price/
     public String toString()
     {
         return itemName + " are $" + pricePerItem;
