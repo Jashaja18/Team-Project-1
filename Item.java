@@ -2,8 +2,8 @@
  * Group # 4
  * Team Project 1
  * January 29, 2021
- * [info]
- */
+ * This class is used to contruct the items we will put in our shopping cart and purchase
+ * Each Item has a name and price.
 
 public class Item
 {
