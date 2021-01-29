@@ -4,7 +4,7 @@
  * January 29, 2021
  * Team Project 1
  * This is the shopping cart, where all the items, in the quantities we wish to purchase,
- * are gathered together in an arraylist and the total costs are calculated
+ * are gathered together in an arraylist and the total costs is calculated
 
 import java.util.*;
 
@@ -62,7 +62,7 @@ public class ShoppingCart{
 		for(ItemOrder i: fullCart)
 		{
 			System.out.print(i.getQuantity() + " units " + i.getItem().getItemName());
-			for (int x = 20; x > i.getItem().getItemName().length(); x--) 
+			for (int x = 20; x > i.getItem().getItemName().length() + String.valueOf(i.getQuantity()).length(); x--) 
 			{
 				System.out.print(".");
 			}
