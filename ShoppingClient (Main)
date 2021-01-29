@@ -1,7 +1,0 @@
-//client for shopping list
-
-public class ShoppingCLient {
-  public static void main(String[] args)  {
-  
-    //what we're going to buy
-    
