@@ -1,4 +1,5 @@
-# TeamProject #1
+# Team Project #1
+
 Write classes to model a shopping list.
 
 Make an Item class that represents a grocery item's name and price, such as tissues for $3.
