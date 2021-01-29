@@ -3,8 +3,8 @@
  * Group #4
  * January 29, 2021
  * Team Project 1
- * [info]
- */
+ * This is the shopping cart, where all the items, in the quantities we wish to purchase,
+ * are gathered together in an arraylist and the total costs are calculated
 
 import java.util.*;
 
@@ -26,12 +26,14 @@ public class ShoppingCart{
 		}
 		return total;
 	}
-
+	
+	// Method to add items to cart
 	public void addItemToCart(ItemOrder orderIt)
 	{
 		fullCart.add(orderIt);
 	}
 
+	// Method to remove items from cart
 	public void removeFromCart(ItemOrder orderIt)
 	{
 		fullCart.remove(orderIt);
