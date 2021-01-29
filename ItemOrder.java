@@ -1,4 +1,3 @@
-
 /*
  * Thais Ribeiro & Shreya Karnati
  * Group #4
