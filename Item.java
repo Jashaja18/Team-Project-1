@@ -24,11 +24,14 @@ public class Item
         return itemName;
     }
 
+    // How much the item costs
     public double getPrice() 
     {
         return pricePerItem;
     }
 
+    // Return a string so that we can print the item and its price
+    // in the shopping cart
     public String toString()
     {
         return itemName + " are $" + pricePerItem;
