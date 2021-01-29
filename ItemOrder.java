@@ -3,8 +3,9 @@
  * Group #4
  * January 29, 2021
  * Team Project 1
- * [file]
- */
+ * Constructs an order of each purchased item.
+ * Calculates the total price of each item and of the entire shopping cart,
+ * accounting for bulk discounts for purchases of 10 or more
 
 public class ItemOrder{
 
@@ -38,9 +39,11 @@ public class ItemOrder{
 	}
 
 	// Calculates the total price of the order
+	// Includes a bulk discount
 	public double getOrderTotal()
 	{
 		double orderTotal = 0.00;
+		// If we purchase more than 10 of an object we get about 79% off
 		if (allQuantity >= 10)
 		{
 			for (int i = allQuantity; i > 10; i--)
