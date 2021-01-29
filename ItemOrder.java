@@ -7,62 +7,49 @@
  * [file]
  */
 
-public class ItemOrder
-{
-    // Creating variables needed
-    private double orderPrice;
-    private String itemName;
-    private int quantity;
-    private Item item;
+public class ItemOrder{
 
-    // Information needed for an order
-    public ItemOrder(Item item, int quantity)
-    {
-        itemName = item.getItemName();
-        this.quantity = quantity;
-        this.item = item;
-    }
+	// Creating variables needed
+	private int allQuantity;
+	private Item item;
 
-    // 
-    public ItemOrder()
-    {
-        this.quantity = 0;
-    }
+	// Information needed for an order
+	public ItemOrder(Item item, int allQuantity)
+	{
+		this.allQuantity = allQuantity;
+		this.item = item;
+	}
 
-    // Used when the name of the item is needed
-    public String getItem()
-    {
-        return this.itemName;
-    }
+	// Used when the quantity of items is needed
+	public int getQuantity()
+	{
+		return allQuantity;
+	}
 
-    // Used when the quantity of items is needed
-    public int getQuantity()
-    {
-        return this.quantity;
-    }
+	//getter for item
+	public Item getItem()
+	{
+		return item;
+	}
 
-    // Calculates the total price of the order
-    public double getOrderPrice()
-    {
-        double orderPrice = 0;
-        if (quantity % 2 == 0)
-        {
-            for (int i = 0; i < quantity/2; i++)
-            {
-                orderPrice += item.getPricePerItem() * 0.75;
-            }
-            return orderPrice;
-        } else {
-            for (int i = 0; i < quantity/2; i++)
-                orderPrice += item.getPricePerItem() * 0.75;
+	// Set quantity price
+	public void setallQuantity(int allQuantity)
+	{
+		this.allQuantity = allQuantity;
+	}
 
-            return orderPrice + item.getPricePerItem();
-        }
-    }
+	// Calculates the total price of the order
+	public double getOrderTotal()
+	{
+		double orderTotal = 0.00;
+		if (allQuantity >= 10)
+		{
+			for (int i = allQuantity; i > 10; i--)
+				orderTotal += item.getPrice();
+			return orderTotal + 7.5 * item.getPrice();
 
-    // Used to print out the order in a formatted way
-    public String printOrder()
-    {
-        return "Item: " + getItem() + " Quantity: " + getQuantity() + " Price: " + getOrderPrice();
-    }
+		} else {
+			return orderTotal + item.getPrice() * allQuantity;
+		}
+	}
 }
