@@ -3,7 +3,7 @@
  * Group #4
  * January 29, 2021
  * Team Project 1
- * [file]
+ * Stores all information about an order
  */
 
 public class ItemOrder{

@@ -3,19 +3,20 @@
  * Group #4
  * January 29, 2021
  * Team Project 1
- * [info]
+ * A class that stores all of the items ordered
  */
 
 import java.util.*;
 
 public class ShoppingCart{
 
+	// Array list to hold all of the orders
 	private ArrayList<ItemOrder> fullCart = new ArrayList<ItemOrder>();
 
-	// default constuctor
+	// Constuctor
 	public ShoppingCart() {}
 
-	// this will get the total cost of the cart
+	// Total price of everything ordered
 	public double getTotalPrice()
 	{
 		double total = 0.0;
@@ -27,11 +28,13 @@ public class ShoppingCart{
 		return total;
 	}
 
+	// Adding an item to the cart
 	public void addItemToCart(ItemOrder orderIt)
 	{
 		fullCart.add(orderIt);
 	}
 
+	// Removing an item from the cart
 	public void removeFromCart(ItemOrder orderIt)
 	{
 		fullCart.remove(orderIt);
@@ -51,7 +54,7 @@ public class ShoppingCart{
 		return itemFound;
 	}
 
-	// standard Java toString
+	// Printing out all of the iteams in the cart in a formatted way
 	public void printCart(ShoppingCart cart)
 	{
 		Scanner input = new Scanner(System.in);
@@ -81,4 +84,5 @@ public class ShoppingCart{
 		}
 		System.out.println("Total Price: $" + cart.getTotalPrice());
 	}
+	
 }
